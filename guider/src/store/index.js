@@ -5,8 +5,12 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    currentPage: 0,
   },
   mutations: {
+    nextPage (state) {
+      state.currentPage++
+    }
   },
   actions: {
   },

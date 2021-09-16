@@ -6,7 +6,7 @@
         <b-nav-text>Tutorial name</b-nav-text>
       </b-navbar-nav>
       <b-navbar-nav class="ml-auto">
-        <b-nav-text class="mr-2" >5/24</b-nav-text>
+        <b-nav-text class="mr-2" >Page: {{this.$store.state.currentPage}}</b-nav-text>
         <b-button variant="outline-warning" type="submit">Back</b-button>
       </b-navbar-nav>
     </b-navbar>

@@ -15,8 +15,8 @@
         within the larger container.
       </p>
 
-      <b-button class="mr-5 pl-5 pr-5" variant="success" href="#">YES</b-button>
-      <b-button class="pl-5 pr-5" variant="danger" href="#">NO</b-button>
+      <b-button @click="nextPage()" class="mr-5 pl-5 pr-5" variant="success" href="#">YES</b-button>
+      <b-button @click="nextPage()" class="pl-5 pr-5" variant="danger" href="#">NO</b-button>
     </b-jumbotron>
   </div>
 </template>
@@ -29,6 +29,11 @@ export default {
     lead: String,
     msg: String,
   },
+  methods: {
+    nextPage() {
+      this.$store.commit('nextPage')
+    }
+  }
 };
 </script>
 
