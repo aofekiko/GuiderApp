@@ -1,19 +1,46 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-navbar type="dark" variant="dark">
+      <b-navbar-brand class="mr-auto" href="#">BORGIR.js</b-navbar-brand>
+      <b-navbar-nav class="mx-auto">
+        <b-nav-text>Tutorial name</b-nav-text>
+      </b-navbar-nav>
+      <b-navbar-nav class="ml-auto">
+        <b-nav-text class="mr-2" >5/24</b-nav-text>
+        <b-button variant="outline-warning" type="submit">Back</b-button>
+      </b-navbar-nav>
+    </b-navbar>
+
+    <b-row>
+      <b-col>
+        <JumboPicture
+          header="This is a pic"
+          pic="https://picsum.photos/250/250/?image=54"
+        ></JumboPicture>
+      </b-col>
+      <b-col>
+        <JumboQuestion header="GENERAL KENOBI"></JumboQuestion>
+      </b-col>
+      <b-col>
+        <JumboQuestion header="!!!!"></JumboQuestion>
+      </b-col>
+    </b-row>
+    <b-row class="mt-4">
+      <b-col>
+        <JumboYesNo header="GIVE ME YOUR FOOKING ANSWER"></JumboYesNo>
+      </b-col>
+    </b-row>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import JumboYesNo from "./components/JumboYesNo.vue";
+import JumboQuestion from "./components/JumboQuestion.vue";
+import JumboPicture from "./components/JumboPicture.vue";
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: { JumboYesNo, JumboQuestion, JumboPicture },
+};
 </script>
 
 <style lang="scss">
@@ -23,7 +50,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #502c3b;
+}
+body {
+  background-color: darkorchid;
 }
 </style>
