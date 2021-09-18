@@ -1,3 +1,7 @@
+Build size comparison:
+* **Vite (New)** - 1.7MB 
+* **WebPack (Old)** - 4.3MB
+
 # guider
 
 ## Project setup
