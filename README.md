@@ -1,5 +1,5 @@
 # guider
-
+An badly designed webapp that I used to teach a friend Vue with
 ## Project setup
 ```
 npm install
